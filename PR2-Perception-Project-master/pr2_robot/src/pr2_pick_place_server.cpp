@@ -219,7 +219,7 @@ bool PR2PickPlace::Routine(pr2_robot::PickPlace::Request &req,
 
       //Close Gripper
       OperateRightGripper(true);
-      ros::Duration(7.0).sleep();
+      ros::Duration(4.0).sleep();
 
       //Reach movement
       right_move_group.setStartStateToCurrentState();
@@ -308,7 +308,7 @@ bool PR2PickPlace::Routine(pr2_robot::PickPlace::Request &req,
 
       //Close Gripper
       OperateLeftGripper(true);
-      ros::Duration(7.0).sleep();
+      ros::Duration(8.0).sleep();
 
       //Reach movement
       left_move_group.setStartStateToCurrentState();
