@@ -10,3 +10,8 @@ $ cd ~/catkin_ws
 $ rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y
 $ catkin_make
 export GAZEBO_MODEL_PATH=~/catkin_ws/src/*path to pr2_robot*/pr2_robot/models:$GAZEBO_MODEL_PATH
+
+READ
+
+incase that the cpp files in pr2_robot/src doesn't work because of older version 
+use the provided cpp files at Warehouse-robot folder
