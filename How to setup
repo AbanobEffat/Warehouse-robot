@@ -1,0 +1,12 @@
+$ sudo pip install cython
+$ cd python-pcl
+$ python setup.py build
+$ sudo python setup.py install
+$ sudo apt-get install pcl-tools
+
+-----------------
+
+$ cd ~/catkin_ws
+$ rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y
+$ catkin_make
+export GAZEBO_MODEL_PATH=~/catkin_ws/src/*path to pr2_robot*/pr2_robot/models:$GAZEBO_MODEL_PATH
