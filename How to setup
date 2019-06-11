@@ -15,3 +15,8 @@ READ
 
 incase that the cpp files in pr2_robot/src doesn't work because of older version 
 use the provided cpp files at Warehouse-robot folder
+
+RUN commands
+roslaunch pr2_robot pick_and_place_project.launch
+*wait until gazebo and rviz is load* 
+rosrun pr2_robot project_template.py
