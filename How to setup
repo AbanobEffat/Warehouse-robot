@@ -1,0 +1,22 @@
+$ sudo pip install cython
+$ cd python-pcl
+$ python setup.py build
+$ sudo python setup.py install
+$ sudo apt-get install pcl-tools
+
+-----------------
+
+$ cd ~/catkin_ws
+$ rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y
+$ catkin_make
+export GAZEBO_MODEL_PATH=~/catkin_ws/src/*path to pr2_robot*/pr2_robot/models:$GAZEBO_MODEL_PATH
+
+READ
+
+incase that the cpp files in pr2_robot/src doesn't work because of older version 
+use the provided cpp files at Warehouse-robot folder
+
+RUN commands
+roslaunch pr2_robot pick_and_place_project.launch
+*wait until gazebo and rviz are loaded* 
+rosrun pr2_robot project_template.py
